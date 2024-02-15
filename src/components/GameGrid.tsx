@@ -1,14 +1,6 @@
-import {
-  Alert,
-  AlertDescription,
-  AlertIcon,
-  AlertTitle,
-  SimpleGrid,
-  Text,
-} from "@chakra-ui/react";
+import { Alert, AlertIcon, AlertTitle, SimpleGrid } from "@chakra-ui/react";
 import { GameQuery } from "../App";
-import useGames, { Platform } from "../hooks/useGames";
-import { Genre } from "../hooks/useGenres";
+import useGames from "../hooks/useGames";
 import GameCard from "./GameCard";
 import GameCardContainer from "./GameCardContainer";
 import GameCardSkeleton from "./GameCardSkeleton";
