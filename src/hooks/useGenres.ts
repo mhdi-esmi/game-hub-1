@@ -10,8 +10,8 @@ export interface Genre {
   id: number;
   name: string;
   slug:string;
-  image_background: string;
   games_count:number;
+  image_background: string;  
   games:any[]
   
 }
@@ -19,9 +19,9 @@ export interface Genre {
 const useGenres = () => 
   useQuery({
       queryKey: ['genres'],
-      queryFn: apiClient.getAll,
+      queryFn: apiClient.get,
       staleTime: 24 * 60 * 60 * 1000, //24h
-      initialData: { count: genres.length, results: genres }
+      initialData: { count: genres.length,next:null, results: genres }
 });
   
 
