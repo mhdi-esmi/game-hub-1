@@ -17,7 +17,7 @@ const usePlatforms = () => useQuery({
   // staleTime:24*60*60*1000,//24h
   staleTime:ms('24h'),//24h
   initialData:platforms
-  // initialData:{count:platforms.length,next:null,results:platforms}
+  // initialDatas:{count:platforms.length,next:null,results:platforms}
 })
 
 export default usePlatforms;
