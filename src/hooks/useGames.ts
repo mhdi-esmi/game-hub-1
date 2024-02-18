@@ -35,6 +35,7 @@ const useGames = () =>{
       staleTime:ms('24h'),//24h
       refetchOnWindowFocus:false,
       refetchOnReconnect:false,
+      
          
   })
 }
