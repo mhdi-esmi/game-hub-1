@@ -1,4 +1,3 @@
-import { Spinner } from "@chakra-ui/react";
 import useTrailers from "../hooks/useTrailers";
 
 interface Props {
@@ -7,7 +6,7 @@ interface Props {
 
 const GameTrailers = ({ gameId }: Props) => {
   const { data, error, isLoading } = useTrailers(gameId);
-  if (isLoading) return <Spinner />;
+  if (isLoading) return null;
   if (error) throw error;
 
   return data && data.results.length !== 0 ? (
